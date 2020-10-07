@@ -20,5 +20,9 @@ from django.shortcuts import render
 from . import views
 
 urlpatterns = [
-    path('', (views.belajar_api)),
+    path('', views.belajar_api),
+    path('create/', views.create),
+    path('<id>/delete', views.delete),
+    path('<id>/read', views.read),
+    path('<id>/update', views.update),
 ]
